@@ -1,0 +1,21 @@
+/* Variables */
+
+:root{
+    --basic-black: #000000;
+    --basic-red: #fb565a;
+    --basic-red-hover: #e74246;
+    --basic-red-active: #d7373b;
+    --basic-green: #00ca74;
+    --basic-yellow: #efc849;
+    --basic-white:#fff;
+    --app-button: #00ca74;
+    --app-button-hover:#00bc6c;
+    --app-button-active: #00aa62;
+    --presentation-button: #efc849;
+    --presentation-button-hover: #eab534;
+    --presentation-button-active: #e5a722;
+}
+
+body{
+
+}
