@@ -16,6 +16,38 @@
     --presentation-button-active: #e5a722;
 }
 
+/* Global */
+
 body{
+    min-width:1440px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%; /*Чтобы в блок помещались изображения любых размеров*/
+    height: auto;
+}
+
+/* Main-navigation */
+
+.main-navigation{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--basic-black);
+    background-color: transparent; /*Прозрачный фон*/
+}
+.site-navigation{
 
 }
