@@ -2,8 +2,7 @@
 
 :root{
     --basic-black: #000000;
-    --basic-red: #fb565a;
-    --basic-red-hover: #e74246;
+    --basic-red-hover: #fb565a;
     --basic-red-active: #d7373b;
     --basic-green: #00ca74;
     --basic-yellow: #efc849;
@@ -49,5 +48,39 @@ img {
     background-color: transparent; /*Прозрачный фон*/
 }
 .site-navigation{
+    list-style: none;
+}
+.site-navigation a,
+.login-link {
+    color: var(--basic-black);
+}
 
+.site-navigation a:hover,
+.login-link:hover{
+    color: var(--basic-red-hover);
+}
+
+.main-header-logo:hover{
+    opacity: 0.7;
+}
+
+/* Main-slider */
+
+
+
+/* Advantages */
+
+.advantages-list{
+    list-style: none;
+}
+
+.advantages-item{
+    text-align: left;
+}
+
+.advantages-item h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
 }
