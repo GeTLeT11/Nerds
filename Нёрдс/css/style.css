@@ -56,7 +56,9 @@ img {
 }
 
 .site-navigation a:hover,
-.login-link:hover{
+.site-navigation a:focus,
+.login-link:hover,
+.login-link:focus{
     color: var(--basic-red-hover);
 }
 
@@ -84,3 +86,4 @@ img {
     font-size: 24px;
     line-height: 30px;
 }
+
