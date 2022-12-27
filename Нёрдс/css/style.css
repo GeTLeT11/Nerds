@@ -1,6 +1,7 @@
 /* Variables */
 
 :root{
+    --basic-background-color: #EEEEEE;
     --basic-black: #000000;
     --basic-red-hover: #fb565a;
     --basic-red-active: #d7373b;
@@ -53,6 +54,7 @@ img {
 .site-navigation a,
 .login-link {
     color: var(--basic-black);
+    text-transform: uppercase;
 }
 
 .site-navigation a:hover,
@@ -68,12 +70,42 @@ img {
 
 /* Main-slider */
 
+.main-header{
+    background-color: var(--basic-background-color);
+}
+    
+.main-slider{
+    background-color: var(--basic-background-color);
+}
 
+/* slider */
+
+
+.slide-button{
+    width: 240px;
+    height: 50px;
+}
+.button {
+    background-color: var(--basic-red-hover);
+    color: var(--basic-white);
+    padding: 17px 54px 15px 54px;
+    border-radius: 3px;
+}
+
+.main-slider a:hover{
+    background-color: var(--basic-red-hover);
+}
+
+.main-slider a:active{
+    background-color: var(--basic-red-active);
+}
 
 /* Advantages */
 
 .advantages-list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .advantages-item{
