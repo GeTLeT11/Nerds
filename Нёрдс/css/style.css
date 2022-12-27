@@ -2,6 +2,7 @@
 
 :root{
     --basic-background-color: #EEEEEE;
+    --basic-text-opacity-active: rgb(255,255,255, 0.3);
     --basic-black: #000000;
     --basic-red-hover: #fb565a;
     --basic-red-active: #d7373b;
@@ -99,6 +100,7 @@ img {
 
 .button:active{
     background-color: var(--basic-red-active);
+    color: var(--basic-text-opacity-active);
 }
 
 .main-slider a:hover{
@@ -229,5 +231,5 @@ img {
 }
 
 .cta-text{
-    
+
 }
