@@ -17,6 +17,8 @@
     --presentation-button-active: #e5a722;
     --basic-callback: #666666;
     --button-hover-background-grey: #DFDFDF;
+    --button-active-background-grey: #D5D5D5;
+    --text-filters: #283136;
 }
 
 /* Global */
@@ -255,14 +257,24 @@ img {
     vertical-align: middle;
 }
 
-.form-sort,
-.form-filter{
-    font-weight: 700;
+.form-price,
+.form-grid,
+.form-feature{
+    font-weight: 700;   
+    color: #283136;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 30px; 
     text-transform: uppercase;
 }
 
+.form-filter{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-filters);
+}
+
+/* Button form */
 .button-form{
     background-color: var(--basic-background-color);
     padding: 16px 88px;
@@ -276,4 +288,106 @@ img {
 
 .button-form:hover{
     background-color: var(--button-hover-background-grey) ;
+}
+
+.button-form:active{
+    background-color: var(--button-active-background-grey);
+    opacity: .3;
+    box-shadow: inset 0px 3px 0px var(#0001011A);
+}
+
+
+/* Sort list */
+
+.sort-list a{
+    font-weight: 400;
+    opacity: .6;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-filters);
+    text-transform: uppercase;
+}
+
+.sort-list a:hover{
+    opacity: .3;
+}
+
+.sort-list a:active{
+    opacity: 1;
+}
+
+
+/* Products / catalog */
+
+.products-description{
+    background-color: var(--basic-white);
+    text-align: center;
+}
+
+.product-name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 26px 140px;
+    color: var(--basic-black);
+}
+
+.product-name:hover{
+    color: var(--basic-red-hover);
+}
+
+.product-name:active{
+    opacity: .3;
+}
+
+.product-button:active{
+    color: var(--basic-white)
+}
+
+.product-info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-callback);
+    padding-top: 12px;
+    padding-bottom: 32px;
+}
+
+/* Pagingations */
+
+.page-item{
+    background-color: var(--basic-background-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--basic-black);
+    border-radius: 3px;
+}
+
+.page-item:hover{
+    background-color: var(--basic-white);
+    border: 3px solid var(--basic-background-color);
+}
+
+.page-item:hover:not(.page-active){
+    background-color: var(--basic-background-color);
+}
+
+.page-item:active:not(.page-active){
+    background-color: var(--basic-background-color);
+    color: var(--basic-black);
+}
+
+.next-page{
+    width: 260px;
+} 
+
+.page-active{
+    background-color: var(--basic-white);
+    border: 3px solid var(--basic-background-color);
+    width: 44px;
+    height: 44px;
+    line-height: 47px;
 }
