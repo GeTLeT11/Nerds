@@ -31,7 +31,7 @@
                 <li class="header-link">
                     <a href="blank.html">Клиенты</a>
                 </li>
-                <li class="header-link">
+                <li class="header-link active">
                     <a>Магазин</a>
                 </li>
                 <li class="header-link">
@@ -43,23 +43,24 @@
         <a href="blank.html">Корзина</a>
     </header>
     <main>
-        <section>
+        <section class="main-header">
             <h1>Магазин готовых шаблонов</h1>
         </section>
+
         <section>
             <h2>Фильтр</h2>
             <!-- Ползунок с фильтром от и до по сумме, надо посмотреть в видео реализацию
             Сделаю свою версию, на основе источников ресурса Интернет
             -->
-            <form action="https://echo.htmlacademy.ru" method="get"> 
+            <form class="form-filter" action="https://echo.htmlacademy.ru" method="get"> 
                 <fieldset>
-                    <legend>Стоимость: </legend>
+                    <legend class="form-price form-filter">Стоимость: </legend>
                     <input type="range" id="myRange" name="priceLider" min="0" max="150000" step="1">
                     <label>от <input type="text" name="priceLider" value="0"></label>
                     <label>до <input type="text" name="priceLider" value="150000"></label>
                 </fieldset>
                 <fieldset>
-                    <legend>Сетка: </legend>
+                    <legend class="form-grid form-filter">Сетка: </legend>
                     <ul>
                         <li>
                             <input type="checkbox" name="grid" checked>
@@ -76,7 +77,7 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Особенности: </legend>
+                    <legend class="form-feature form-filter">Особенности: </legend>
                     <ul>
                         <li>
                             <input type="checkbox" name="feature" checked>
@@ -100,15 +101,15 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="button" type="submit">Показать</button>
             </form>
         </section>
         <section>
             <h2>Товары</h2>
-            <form action="">
+            <form action="form-product">
                 <fieldset>
-                    <legend>Сортировать:</legend>
-                    <ul>
+                    <legend class="form-sort">Сортировать:</legend>
+                    <ul class="sort-list">
                         <li>
                             <input type="checkbox" name="korzina-feature" checked>
                             <label for="korzina-feature">По цене</label>
@@ -133,97 +134,116 @@
                 </fieldset>
             </form>
             <h2>Каталог макетов</h2>
-            <ul>
+            <ul class="product-list clear-list" >
                 <li>
-                    <a href="product.html">
-                        <h3>Sedona</h3>
-                    </a>
+                    <div class="products-description">
+                        <h3><a href="product.html">Sedona</a></h3>
+                            <p>Информационный сайт для туристов</p>
+                            <p>
+                                <button class="button" type="button">2 990 руб</button>
+                            </p>
+                    </div>   
                     <img src="img/img-sedona 1.png" alt="cards" width="358" height="440">
-                        <p>Информационный сайт для туристов</p>
+                </li>
+                <li>
+                    <div class="products-description">
+                        <a href="product.html">
+                            <h3>Название</h3>
+                        </a>
                         <p>
-                            <button type="button">2 990 руб</button>
+                            <button class="button" type="button">2 990 руб</button>
                         </p>
+                    </div>  
+                    <img src="img/img-sedona 1.png" alt="cards">
                 </li>
                 <li>
-                    <a href="product.html">
-                        <h3>Название</h3>
-                        <p><img src="img/img-sedona 1.png" alt="cards"></p>
-                    </a>
-                    <p>
-                        <button type="button">2 990 руб</button>
-                    </p>
+                    <div class="products-description">
+                        <a href="product.html">
+                            <h3>Название</h3>
+                            <p><img src="img/img-sedona 1.png" alt="cards"></p>
+                        </a>
+                        <p>
+                            <button class="button" type="button">2 990 руб</button>
+                        </p>
+                    </div>
                 </li>
                 <li>
-                    <a href="product.html">
-                        <h3>Название</h3>
-                        <p><img src="img/img-sedona 1.png" alt="cards"></p>
-                    </a>
-                    <p>
-                        <button type="button">2 990 руб</button>
-                    </p>
+                    <div class="products-description">
+                        <a href="product.html">
+                            <h3>Название</h3>
+                            <p><img src="img/img-sedona 1.png" alt="cards"></p>
+                        </a>
+                        <p>
+                            <button class="button" type="button">2 990 руб</button>
+                        </p>
+                    </div>
                 </li>
                 <li>
-                    <a href="product.html">
-                        <h3>Название</h3>
-                        <p><img src="img/img-sedona 1.png" alt="cards"></p>
-                    </a>
-                    <p>
-                        <button type="button">2 990 руб</button>
-                    </p>
+                    <div class="products-description">
+                        <a href="product.html">
+                            <h3>Название</h3>
+                            <p><img src="img/img-sedona 1.png" alt="cards"></p>
+                        </a>
+                        <p>
+                            <button class="button" type="button">2 990 руб</button>
+                        </p> 
+                    </div>
                 </li>
                 <li>
-                    <a href="product.html">
-                        <h3>Название</h3>
-                        <p><img src="img/img-sedona 1.png" alt="cards"></p>
-                    </a>
-                    <p>
-                        <button type="button">2 990 руб</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Название</h3>
-                        <p><img src="img/img-sedona 1.png" alt="cards"></p>
-                    </a>
-                    <p>
-                        <button type="button">2 990 руб</button>
-                    </p>
+                    <div class="products-description">
+                        <a href="product.html">
+                            <h3>Название</h3>
+                            <p><img src="img/img-sedona 1.png" alt="cards"></p>
+                        </a>
+                        <p>
+                            <button class="button" type="button">2 990 руб</button>
+                        </p>
+                    </div>
                 </li>
             </ul>
-            <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+            <ul class="pagination clear-list">
+                <li><a class="page-active page-item">1</a></li>
+                <li><a class="page-item" href="#">2</a></li>
+                <li><a class="page-item" href="#">3</a></li>
+                <li><a class="page-item" href="#">Следующая</a></li>
             </ul>
+        </section>
+
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <p>Nerds design studio</p>
+            <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+            <p><a class="contacts-telephone" href="">+7 800 555-86-28</p>
+            <a class="button" href="">Напишите нам</a>
+            <img src="img/map 1.png" alt="">
         </section>
     </main>
 
-    <section>
-        <h2>Контакты</h2>
-        <p>Nerds design studio</p>
-        <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <p><a href="">+7 800 555-86-28</p>
-            <a href="">Напишите нам</a>
-            <img src="img/map 1.png" alt="">
-    </section>
-    <footer>
-        <h2>Наши соц сети</h2>
-        <ul>
-            <li><img src="img/vk-icon.png" alt="ВК">ВК</li>
-            <li><img src="img/fb-icon.png" alt="FaceBook">FaceBook</li>
-            <li><img src="img/insta-icon.png" alt="Instagram">Instagram</li>
-        </ul>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-        <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+
+ <footer class="main-footer">
+        <section class="footer-social">
+            <h2>Наши соц сети</h2>
+            <ul class="social-list">
+                <li class="social-button"><img src="img/vk-icon.png" alt="">ВК</li>
+                <li class="social-button"><img src="img/fb-icon.png" alt="">FaceBook</li>
+                <li class="social-button"><img src="img/insta-icon.png" alt="">Instagram</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+            <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «
+                <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».
+            </p>
+        </section>
     </footer>
+    <!-- /.main-footer / footer -->
     <section>
         <h2>Напишите нам</h2>
-        <form action="">
+        <form action="callback">
             <p>
                 <label for="name">Ваше имя:</label>
-                <input type="" id="name" value="Имя Фамелия"></input>
+                <input type="" id="name" value="Имя Фамилия"></input>
             </p>
             <p>
                 <label for="email">Ваш email:</label>
@@ -237,6 +257,9 @@
         </form>
         <button type="button">Закрыть</button>
     </section>
+    <!-- /.callback -->
+
+
 </body>
 
 </html>

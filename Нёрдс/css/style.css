@@ -16,6 +16,7 @@
     --presentation-button-hover: #eab534;
     --presentation-button-active: #e5a722;
     --basic-callback: #666666;
+    --button-hover-background-grey: #DFDFDF;
 }
 
 /* Global */
@@ -231,5 +232,48 @@ img {
 }
 
 .cta-text{
-    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36;
+}
+
+/* page Catalog */
+
+/* Forms */
+
+.form-filter fieldset{
+    border: none;
+}
+
+.form-filter input[type="text"]{
+    background-color: var(--basic-background-color);
+    border: none;
+    width: 80px;
+    height: 38px;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-sort,
+.form-filter{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.button-form{
+    background-color: var(--basic-background-color);
+    padding: 16px 88px;
+    color: var(--basic-black);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+}
+
+.button-form:hover{
+    background-color: var(--button-hover-background-grey) ;
 }
