@@ -33,6 +33,15 @@ body{
     font-weight: 400;
     color: var(--basic-black);
     background-color: var(--basic-white);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.page{
+    height: 100%;
 }
 
 a {
@@ -44,6 +53,25 @@ img {
     height: auto;
 }
 
+.container {
+    width: 1159px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+.hr-line{
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 39px;
+}
+
+.index-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 /* Main-navigation */
 
 .main-navigation{
@@ -54,6 +82,8 @@ img {
     background-color: transparent; /*Прозрачный фон*/
 }
 .site-navigation{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .site-navigation a,
@@ -76,12 +106,23 @@ img {
 /* Main-slider */
 
 .main-header{
+    display: grid;
+    grid-template-columns: 160px 1fr min-content;
     background-color: var(--basic-background-color);
 }
     
 .main-slider{
+    display: grid;
+    grid-template-columns: 530px auto;
+    grid-template-rows: auto auto;
+    margin-bottom: 80px;
     background-color: var(--basic-background-color);
 }
+
+.main-slider h1{
+    grid-column: 1 / -1;
+}
+
 
 /* slider */
 
@@ -116,7 +157,14 @@ img {
 
 /* Advantages */
 
+.advantages{
+    margin-bottom: 80px;
+}
+
 .advantages-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
     list-style: none;
     margin: 0;
     padding: 0;
