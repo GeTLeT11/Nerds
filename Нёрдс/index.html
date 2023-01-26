@@ -178,7 +178,7 @@
     </main> -->
     <!-- /.main / container-->
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <section class="footer-social">
             <h2>Наши соц сети</h2>
             <ul class="social-list">
@@ -187,7 +187,7 @@
                 <li class="social-button"><img src="img/insta-icon.png" alt="">Instagram</li>
             </ul>
         </section>
-        <section>
+        <section class="footer-advantages">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей</p>
             <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «
@@ -198,19 +198,23 @@
     <!-- /.main-footer / footer -->
     <section>
         <h2>Напишите нам</h2>
-        <form action="callback">
-            <p>
-                <label for="name">Ваше имя:</label>
-                <input type="" id="name" value="Имя Фамилия"></input>
-            </p>
-            <p>
-                <label for="email">Ваш email:</label>
-                <input type="" id="email" value="email@example.com"></input>
-            </p>
-            <p>
-                <label for="text_mail">Текст письма</label>
-                <textarea name="text_mail" rows="10" cols="40" value="В свободной форме"></textarea>
-            </p>
+        <form action="callback container">
+            <div class="callback-user">
+                <p>
+                    <label for="name">Ваше имя:</label>
+                    <input type="" id="name" value="Имя Фамилия"></input>
+                </p>
+                <p>
+                    <label for="email">Ваш email:</label>
+                    <input type="" id="email" value="email@example.com"></input>
+                </p>
+            </div>
+            <div class="callback-text">
+                <p>
+                    <label for="text_mail">Текст письма</label>
+                    <textarea name="text_mail" rows="10" cols="40" value="В свободной форме"></textarea>
+                </p>
+            </div>
             <button type="button">Отправить</button>
         </form>
         <button type="button">Закрыть</button>
