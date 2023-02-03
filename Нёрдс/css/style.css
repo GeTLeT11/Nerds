@@ -63,16 +63,18 @@ img {
     margin: 0;
     padding: 0;
     border: none;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--basic-background-color);
     margin-bottom: 39px;
 }
 
 .index-columns{
     display: grid;
-    grid-template-columns: 760px 357px;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 80px;
 }
+
+
 /* Main-navigation */
 
 .main-navigation{
@@ -114,9 +116,6 @@ img {
 
 /* Main-slider */
 
-.main-header{
-    background-color: var(--basic-background-color);
-}
 
 .slider-list{
     display: grid;
@@ -234,6 +233,10 @@ img {
 
 /* Service */ 
 
+.service{
+    grid-column: 1 / 3;
+}
+
 .services .slogan{
     font-size: 45px;
     line-height: 45;
@@ -265,7 +268,7 @@ img {
 
 .partners-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 44px;
     margin: 0;
     padding: 0;
@@ -348,11 +351,42 @@ img {
     grid-column: 2 / 9;
 }
 */
+
+
 /* page Catalog */
+.page-body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    min-height: 100%;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.heading-catalog{
+    padding-top: 32px;
+    padding-bottom: 108px;
+    margin-bottom: 55px;
+}
+
+.main-bg{
+    background-color: var(--basic-background-color);
+}
+
+.page-catalog{
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-content: start;
+}
+
 
 /* Forms */
 
 .form-filter fieldset{
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
@@ -369,6 +403,8 @@ img {
 .form-price,
 .form-grid,
 .form-feature{
+    padding: 0;
+    margin: 0;
     font-weight: 700;   
     color: #283136;
     font-size: 18px;
@@ -377,6 +413,8 @@ img {
 }
 
 .form-filter{
+    padding: 0;
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -408,6 +446,13 @@ img {
 
 /* Sort list */
 
+.sort-list{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
 .sort-list a{
     font-weight: 400;
     opacity: .6;
@@ -425,8 +470,11 @@ img {
     opacity: 1;
 }
 
-
 /* Products / catalog */
+
+.products{
+    margin-left: 140px;
+}
 
 .products-description{
     background-color: var(--basic-white);
@@ -461,6 +509,7 @@ img {
     padding-top: 12px;
     padding-bottom: 32px;
 }
+
 
 /* Pagingations */
 
