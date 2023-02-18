@@ -392,6 +392,15 @@ img {
     border: none;
 }
 
+.form-filter legend{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form-filter .form-price{
+    margin-bottom:48px;
+}
+
 .form-filter input[type="text"]{
     background-color: var(--basic-background-color);
     border: none;
@@ -401,6 +410,24 @@ img {
     text-align: center;
     vertical-align: middle;
 }
+
+.form-filter_list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 20px;
+    font-size: 16px;
+    margin-top:14px;
+    margin-bottom: 43px;
+}
+
+.form-filter_list li{
+    margin-bottom: 20px;
+}
+.form-filter_list input{
+  margin-right: 11px;
+}
+
 
 .form-price,
 .form-grid,
@@ -413,11 +440,21 @@ img {
     line-height: 30px; 
     text-transform: uppercase;
 }
-
+/*
+#myRange{
+    display: flex;
+    flex
+    flex-grow: 0;
+}
+*/
 .form-filter{
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     font-weight: 400;
+    width: 260px;
     font-size: 16px;
     line-height: 20px;
     color: var(--text-filters);
@@ -511,6 +548,12 @@ img {
 .products-description{
     background-color: var(--basic-white);
     text-align: center;
+    margin-right:40px;
+    margin-bottom:30px;
+}
+
+.products-description:nth-child(2n){
+    margin-right: 0;
 }
 
 .product-name{
