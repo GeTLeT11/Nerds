@@ -37,7 +37,7 @@ body{
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    align-content: start;
+
 }
 
 .page{
@@ -90,13 +90,39 @@ img {
     grid-template-columns: 160px 1fr min-content;
     gap: 24px;
     background-color: var(--basic-background-color);
-
+    align-items: center;
 }
+
 .site-navigation{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    width: 437px;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
 }
+
+.site-navigation li{
+    margin-right: 45px;
+}
+
+.slider-list h1{
+    margin: 0;
+}
+
+.slider-item p{
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.slider-item p:nth-child(2){
+    margin-bottom: 38px;
+}
+
+.slider-button{
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
 .site-navigation a,
 .login-link {
     color: var(--basic-black);
