@@ -95,9 +95,10 @@ img {
 
 .site-navigation{
     display: flex;
-    width: 437px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+    justify-self: center;
+    padding: 0;
+    margin: auto;
     list-style: none;
 }
 
