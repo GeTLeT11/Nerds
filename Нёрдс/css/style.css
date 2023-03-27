@@ -69,10 +69,10 @@ body{
   color: rgba(0,0,0,0.3);
 }
 .main-header-top .active {
-  background-image: linear-gradient(to left, #fb565a, #fb565a);
-  background-position: 0 85%;
-  background-size: 10px 2px;
-  background-repeat: repeat-x;
+    background-image: linear-gradient(to left, #fb565a, #fb565a);
+    background-position: 0 100%;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
 }
 .logo {
   width: 160px;
@@ -279,7 +279,7 @@ img {
 .main-navigation{
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 17px;
     color: var(--basic-black);
     background-color: transparent; /*Прозрачный фон*/
 }
@@ -714,9 +714,9 @@ img {
 .catalog-title {
     margin: 0px;
     padding: 0px;
-    margin-top: 78px;
-    margin-left: 215px; 
-    font-size: 55px;
+    margin-top: 77px;
+    margin-left: 226px;
+    font-size: 52px;
     line-height: 55px;
   }
 
@@ -727,6 +727,20 @@ img {
     margin: 0;
     border: none;
     margin-bottom: 54px;
+}
+
+.form-filter .price-filter{
+    display: grid;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 80px 38px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-bottom: 54px;
+}
+
+.price-filter_price-range{
+    grid-column: 1 / -1;
 }
 
 .form-filter fieldset:nth-child(2){

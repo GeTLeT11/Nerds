@@ -41,16 +41,15 @@
         <div class="container">
             <div class="products-grid">
                 <section>
-                    <h2>Фильтр</h2>
                     <!-- Ползунок с фильтром от и до по сумме, надо посмотреть в видео реализацию
                     Сделаю свою версию, на основе источников ресурса Интернет
                     -->
                     <form class="form-filter" action="https://echo.htmlacademy.ru" method="get"> 
-                        <fieldset>
+                        <fieldset class="price-filter">
                             <legend class="form-price">Стоимость: </legend>
-                            <input type="range" id="myRange" name="priceLider" min="0" max="150000" step="1">
-                            <label>от <input type="text" name="priceLider" value="0"></label>
-                            <label>до <input type="text" name="priceLider" value="150000"></label>
+                            <input class="price-filter_price-range" type="range" id="myRange" name="priceLider" min="0" max="150000" step="1">
+                            <label class="price-filter_price-start">от <input type="text" name="priceLider" value="0"></label>
+                            <label class="">до <input type="text" name="priceLider" value="150000"></label>
                         </fieldset>
                         <fieldset>
                             <legend class="form-grid">Сетка: </legend>
