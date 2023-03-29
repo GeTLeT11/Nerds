@@ -733,6 +733,7 @@ img {
     display: grid;
     grid-template-columns: 130px 130px;
     grid-template-rows: 80px 38px;
+    gap: 18px;
     padding: 0;
     margin: 0;
     border: none;
@@ -887,9 +888,10 @@ img {
 }
 
 /* Products / catalog */
-
+/*------------*/
 .sorting-result-img img {
     display: block;
+    width: 100%;
   }
   .sorting-result-img {
     position: relative;
@@ -899,7 +901,7 @@ img {
 
   .sorting-result-info {
     display: none;
-    width: 362px;
+    width: 100%;
     min-height: 215px;
     padding-top: 25px;
     position: absolute;
@@ -912,15 +914,13 @@ img {
   .sorting-result-item:hover  .sorting-result-info {
     display: block;
   }
-
 /*------------*/
+
 
 .product-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-    row-gap: 25px;
-    margin-bottom: 55px;
 }
 
 .products-grid{
